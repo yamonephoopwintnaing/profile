@@ -26,7 +26,7 @@
 	<script src="{{ url_for('static', filename='util.js') }}"></script>
 	<script src="{{ url_for('static', filename='respond.min.js') }}"></script>
 	<script src="{{ url_for('static', filename='responsive.js') }}"></script>
-	<link rel="stylesheet" href="{{ url_for('static, filename='main.css') }}" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
         <title>PWA Fire Codelab Demo</title>
         <meta charset="utf-8">
             
@@ -41,7 +41,7 @@
     
     <![endif]--><!--[if lte IE 8]>
         
-		<link rel="stylesheet" href="{{ url_for('static', filename='css/ie8.css) }}" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/ie8.css') }}" />
         
         <![endif]-->
        
@@ -157,7 +157,7 @@
         <article id="about" class="panel secondary inactive" style="display: none;">
                             
 		<div class="image" style="background-image: {{ url_for('static', filename='mayeedwingdg3.jpg') }}; background-position: center center;">
-			<img src="url_for('static', filename='mayeedwingdg3.jpg') }}" alt="" data-position="center center" style="display: none;">
+			<img src="{{ url_for('static', filename='mayeedwingdg3.jpg') }}" alt="" data-position="center center" style="display: none;">
          </div>
     
          <div class="content">
@@ -225,7 +225,7 @@
                 
             </header>
 
-	    <form name="contactform" method="post" action="{{url_for('static', filename='send-email.php') }}">
+	    <form name="contactform" method="post" action="{{ url_for('static', filename='send-email.php') }}">
             
             <div class="field half first">
                                
@@ -262,7 +262,7 @@
        <footer id="footer" class="">
                 
                 
-         <p class="copyright">© Maye Edwin</p>
+         <p class="copyright">© Yamone</p>
             
             
             </footer>
